@@ -1,0 +1,44 @@
+{
+    "python.pythonPath": "C:\\Users\\ADMIN\\anaconda3\\envs\\python\\python.exe",
+    "[git-commit]": {
+
+        "editor.rulers": [
+            72
+        ],
+        "workbench.editor.restoreViewState": false
+    },
+    "editor.fontLigatures": null,
+    "workbench.editorAssociations": [
+    
+    ],
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "task.slowProviderWarning": null,
+    "[dockerfile]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        }
+    },
+    "[json]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "[jsonc]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "[python]": {
+    
+        "editor.wordBasedSuggestions": false
+    }
+}
