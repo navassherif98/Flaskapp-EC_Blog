@@ -2,6 +2,8 @@
 
 A Simple Blog App , where you can view Blogs , You can also create Blogs by creating an account 
 
+### Demo : https://flaskecblog.herokuapp.com/
+
 Features :
 - user can create account 
 - if user forgot his password then user can reset password by email verification
