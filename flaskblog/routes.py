@@ -166,7 +166,7 @@ def user_posts(username):
     posts=Post.query.filter_by(author=user)\
         .order_by(Post.date_posted.desc())\
         .paginate(page=page,per_page=4)
-    image_file = url_for('static', filename='images/' + current_user.image_file)
+    image_file = url_for('static', filename='images/' + user.image_file)
     return render_template('user_posts.html' ,posts=posts,title=username,user=user,username=username,image_file=image_file)
 
 def send_reset_email(user):

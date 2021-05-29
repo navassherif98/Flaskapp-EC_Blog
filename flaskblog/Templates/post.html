@@ -2,16 +2,17 @@
 {% block content %}
     
 <article class="media content-section">
-    <img class='rounded-circle article-img' src="{{ url_for('static',filename='images/'+post.author.image_file) }}" alt="">
     <div class="media-body">
-        <div class="article-metadata">
+      <img class='rounded-circle article-img' src="{{ url_for('static',filename='images/'+post.author.image_file) }}" alt="">
+    
+        <span class="article-metadata">
         <a class="mr-2" href="{{ url_for('user_posts',username=post.author.username) }}">{{ post.author.username }}</a>
         <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
         
-        </div>
-        <h2 class="article-title">{{ post.title }}</h2>
+        </span>
+        <h5 class="article-title pt-2">{{ post.title }}</h5>
         {% if post.image_post %}
-            <img class='pb-2' src="{{url_for('static',filename='images/' + post.image_post)}}" alt="">
+            <img class='img-fluid pb-2' src="{{url_for('static',filename='images/' + post.image_post)}}" alt="">
           {% endif %}
         <p class="article-content">{{ post.content }}</p>
         {% if post.author == current_user %}

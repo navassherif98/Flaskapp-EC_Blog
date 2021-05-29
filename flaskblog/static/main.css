@@ -2,6 +2,7 @@ body {
   background: #c4c4c440;
   color: #333333;
   margin-top: 5rem;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,6 +57,8 @@ a.article-title:hover {
 
 .article-content {
   white-space: pre-line;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+  font-weight: 400;
 }
 
 .article-img {
@@ -67,7 +70,8 @@ a.article-title:hover {
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
+  border-bottom: 1px solid #e3e3e3;
+  position: absolute;
 }
 
 .article-metadata a:hover {
@@ -110,6 +114,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #4e555f;
@@ -210,7 +217,16 @@ body {
   }
   .chart-wrap .number {
     text-align: right;
-    padding-right: 5%;
-    
+    padding-right: 5%; 
   }
+  
 }
+
+@media (max-width:550px) {
+.material-icons {
+        font-size: 0px !important;
+  }
+#hi{
+  display: none;
+}
+  }

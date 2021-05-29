@@ -26,8 +26,8 @@
         <img src="{{ url_for('static',filename='images/logo1.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
         EC Blog
       </a>
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      
+        <button class="navbar-toggler ml-auto float-top" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
@@ -42,7 +42,7 @@
           <!-- Navbar Right Side -->
           <div class="navbar-nav">
             {% if current_user.is_authenticated %}
-              <a class="nav-item nav-link pr-4 text-white" href="">Hi, {{current_user.username}}</a>
+              <div id='hi'><a class="nav-item nav-link pr-4 text-white" href="">Hi, {{current_user.username}}</a></div>
               <span class="material-icons">person</span>
               <a class="nav-item nav-link pl-1 pr-4" href="{{url_for('account')}}">Account</a>
               <span class="material-icons ">logout</span>
@@ -55,7 +55,7 @@
             {% endif %}
           </div>
         </div>
-      </div>
+      
     </nav>
   </header>
 
@@ -71,7 +71,7 @@
           {% endwith %}
           {% block content %}{% endblock %}
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 ">
           {% if trending %}  
             {% if trending[0] %} 
               {% if trending[0][0] %}

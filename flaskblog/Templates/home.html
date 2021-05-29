@@ -2,15 +2,16 @@
 {% block content %}
     {% for post in posts.items %}
     <article class="media content-section">
-      <img class='rounded-circle article-img' src="{{ url_for('static',filename='images/'+post.author.image_file) }}" alt="">
         <div class="media-body">
-          <div class="article-metadata">
-            <a class="mr-2" href="{{ url_for('user_posts',username=post.author.username) }}">{{ post.author.username }}</a>
+          <img class='rounded-circle article-img' src="{{ url_for('static',filename='images/'+post.author.image_file) }}" alt="">
+            
+          <span class="article-metadata">
+            <a class="" href="{{ url_for('user_posts',username=post.author.username) }}">{{ post.author.username }}</a>
             <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
-          </div>
-          <h2><a class="article-title" href="{{ url_for('post',post_id=post.id) }}">{{ post.title }}</a></h2>
+          </span>
+          <h5 class="pt-2"><a class="article-title" href="{{ url_for('post',post_id=post.id) }}">{{ post.title }}</a></h5>
           {% if post.image_post %}
-            <img class='pb-2' src="{{url_for('static',filename='images/' + post.image_post)}}" alt="">
+            <img class='img-fluid pb-2 ' src="{{url_for('static',filename='images/' + post.image_post)}}" alt="">
           {% endif %}
           <p class="article-content">{{ post.content }}</p>
         </div>
