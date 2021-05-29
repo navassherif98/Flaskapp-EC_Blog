@@ -9,3 +9,7 @@ flask_wtf==0.15.1
 Pillow==8.2.0
 pyOpenSSL==20.0.1
 WTForms==2.3.3
+nmslib==2.1.1
+pandas==1.2.4 
+numpy==1.20.3 
+
