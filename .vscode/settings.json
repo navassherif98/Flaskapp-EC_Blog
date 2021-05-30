@@ -40,5 +40,6 @@
     "[python]": {
     
         "editor.wordBasedSuggestions": false
-    }
+    },
+    "liveServer.settings.port": 5501
 }
